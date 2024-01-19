@@ -9,21 +9,25 @@ import UIKit
 
 class LastShot: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    var receivedImage: UIImage?
+        
+    lazy var imageView: UIImageView = {
+            let imageSize: CGFloat = 600
+            let screenWidth = view.frame.width
+            let xCoordinate = (screenWidth - imageSize) / 2
+            let imageView = UIImageView(frame: CGRect(x: xCoordinate, y: 100, width: imageSize, height: imageSize))
+            imageView.contentMode = .scaleAspectFit
+            return imageView
+        }()
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            view.backgroundColor = .white
+            view.addSubview(imageView)
+            
+            if let image = receivedImage {
+                imageView.image = image
+            }
+        }
 
 }

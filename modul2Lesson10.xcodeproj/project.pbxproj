@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		947238222B5A75FD00359E70 /* LastShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947238212B5A75FD00359E70 /* LastShot.swift */; };
 		94E6E0332B52696400B0FA62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6E0322B52696400B0FA62 /* AppDelegate.swift */; };
 		94E6E0352B52696400B0FA62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6E0342B52696400B0FA62 /* SceneDelegate.swift */; };
 		94E6E0372B52696400B0FA62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6E0362B52696400B0FA62 /* ViewController.swift */; };
 		94E6E03A2B52696400B0FA62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E6E0382B52696400B0FA62 /* Main.storyboard */; };
 		94E6E03C2B52696500B0FA62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E6E03B2B52696500B0FA62 /* Assets.xcassets */; };
 		94E6E03F2B52696500B0FA62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E6E03D2B52696500B0FA62 /* LaunchScreen.storyboard */; };
+		94E6E0472B52A23700B0FA62 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6E0462B52A23700B0FA62 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		947238212B5A75FD00359E70 /* LastShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastShot.swift; sourceTree = "<group>"; };
 		94E6E02F2B52696400B0FA62 /* modul2Lesson10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = modul2Lesson10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E6E0322B52696400B0FA62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94E6E0342B52696400B0FA62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		94E6E03B2B52696500B0FA62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94E6E03E2B52696500B0FA62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94E6E0402B52696600B0FA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E6E0462B52A23700B0FA62 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				94E6E0322B52696400B0FA62 /* AppDelegate.swift */,
 				94E6E0342B52696400B0FA62 /* SceneDelegate.swift */,
 				94E6E0362B52696400B0FA62 /* ViewController.swift */,
+				94E6E0462B52A23700B0FA62 /* CameraViewController.swift */,
+				947238212B5A75FD00359E70 /* LastShot.swift */,
 				94E6E0382B52696400B0FA62 /* Main.storyboard */,
 				94E6E03B2B52696500B0FA62 /* Assets.xcassets */,
 				94E6E03D2B52696500B0FA62 /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947238222B5A75FD00359E70 /* LastShot.swift in Sources */,
 				94E6E0372B52696400B0FA62 /* ViewController.swift in Sources */,
+				94E6E0472B52A23700B0FA62 /* CameraViewController.swift in Sources */,
 				94E6E0332B52696400B0FA62 /* AppDelegate.swift in Sources */,
 				94E6E0352B52696400B0FA62 /* SceneDelegate.swift in Sources */,
 			);
@@ -292,13 +300,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43X29FT2L9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = modul2Lesson10/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Acces to camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Acces to camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "доступ к фотогаллерее";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,13 +332,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43X29FT2L9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = modul2Lesson10/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Acces to camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Acces to camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "доступ к фотогаллерее";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
